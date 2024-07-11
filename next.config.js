@@ -16,11 +16,8 @@ const { withSentryConfig } = require("@sentry/nextjs");
 module.exports = withSentryConfig(
   nextConfig,
   {
-    // For all available options, see:
-    // https://github.com/getsentry/sentry-webpack-plugin#options
-
-    org: "my-org",
-    project: "sentry-not-propagating-errors",
+    org: process.env.SENTRY_ORGANISATION,
+    project: process.env.SENTRY_PROJECT,
     widenClientFileUpload: true,
     hideSourceMaps: true,
     disableLogger: false,

@@ -6,6 +6,8 @@ In particular one error is intentionally raised at src/app/api/clients/route.ts:
 
 ## How To Replicate The Issue
 
+Before trying to run the example, please create a .env.local file and place there the valid values specified in the .env.example.
+
 ```console
 yarn install
 yarn dev
